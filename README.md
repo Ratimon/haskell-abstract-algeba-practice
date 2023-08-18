@@ -3,5 +3,10 @@
 ## Installation
 
 ```bash
-cd my-project;
+cabal init
+``` 
+
+```bash
+cabal build
+ cabal run abstract-algeba
 ``` 
