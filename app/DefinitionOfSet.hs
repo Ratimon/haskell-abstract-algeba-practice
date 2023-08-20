@@ -22,4 +22,3 @@ main = do
     putStrLn "Generated Rational Numbers:"
     let limitedResults = take 100 rationalNumbers
     mapM_ (putStrLn . rationalToString) limitedResults
-
