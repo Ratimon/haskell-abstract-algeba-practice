@@ -142,3 +142,7 @@ cabal run cardinality
 ```bash
 cabal run cartesian_1
 ```
+
+6. Compute the cartesian product of {1,2,3,4} and {3,6,9,12} (in that order). If you were to pick 4 particular ordered pairs from this, what arithmetic computation would that encode?
+
+> **Answer**
