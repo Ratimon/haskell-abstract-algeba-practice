@@ -64,3 +64,13 @@ To visualize this relationship:
 - Integers are a subset of both rational numbers and real numbers.
 
 In summary, the relationships among these number systems form a hierarchical structure where each system contains or overlaps with others, as described above.
+
+Run to check if the given set is subset of another:
+
+```bash
+cabal run definition-of-set
+```
+
+> **Note**💡
+
+>  We will run into infinite computation if we give the full list of all data types eg. Real Numbers
