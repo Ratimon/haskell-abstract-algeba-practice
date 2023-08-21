@@ -1,5 +1,3 @@
-
-
 import Data.Complex
 import qualified Data.Set as S
 

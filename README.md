@@ -74,3 +74,5 @@ cabal run sub-set
 > **Note**💡
 
 >  We will run into infinite computation if we give the full list of all data types eg. Real Numbers
+
+3. Define the relationship between the set of transcendental numbers and the set of complex numbers in terms of subsets. Is it a proper subset?

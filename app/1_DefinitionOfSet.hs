@@ -1,5 +1,3 @@
-module Main where
-
 data RationalNumber = RationalNumber Integer Integer
 
 -- Function to create a rational number
