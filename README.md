@@ -136,3 +136,9 @@ cabal run cardinality
 ### Cartesian product
 
 5. We can define a set such that every element from one set is one part of an ordered pair with an element from another set. For example, if `A = {1,2,3}` and `B = {x, y, z}`, `A × B = {(1, x), (1, y), (1, z), (2, x), …, (3, z)}` The result of a cartesian product is still a set: a set of ordered pairs. Cartesian products are not commutative. Compute the cartesian product of B × A 
+
+> **Answer**
+
+```bash
+cabal run cartesian_1
+```
