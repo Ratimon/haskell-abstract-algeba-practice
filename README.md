@@ -68,7 +68,7 @@ In summary, the relationships among these number systems form a hierarchical str
 Run to check if the given set is subset of another:
 
 ```bash
-cabal run definition-of-set
+cabal run sub-set
 ```
 
 > **Note**💡
