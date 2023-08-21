@@ -19,6 +19,8 @@ cabal run abstract-algeba
 
 Express this: `Q = { a / b : a ∈ Z, b ∈ Z, b ≠ 0 }` in Haskell
 
+> **Answer**
+
 ```bash
 cabal run definition-of-set
 ```
@@ -27,6 +29,7 @@ cabal run definition-of-set
 
 2. Define the subset relationship between integers, rational numbers, real numbers, and complex numbers.
 
+> **Answer**
 
 Integers and Rational Numbers:
 - Integers are a subset of rational numbers.
@@ -76,3 +79,15 @@ cabal run sub-set
 >  We will run into infinite computation if we give the full list of all data types eg. Real Numbers
 
 3. Define the relationship between the set of transcendental numbers and the set of complex numbers in terms of subsets. Is it a proper subset?
+
+> **Answer**
+
+The set of complex numbers, denoted by C, includes all numbers of the form a + bi, where a and b are real numbers, and i is the imaginary unit, which is defined as the square root of -1.
+
+The set of transcendental numbers, denoted by T, consists of real or complex numbers that are not algebraic. An algebraic number is a root of a non-zero polynomial equation with integer coefficients. In other words, a transcendental number cannot be a solution to any algebraic equation with integer coefficients.
+
+The relationship between the set of transcendental numbers and the set of complex numbers is such that:
+
+`T ⊂ C`
+
+This means that the set of transcendental numbers is a proper subset of the set of complex numbers. In other words, all transcendental numbers are complex numbers, but not all complex numbers are transcendental. The complex numbers include both transcendental numbers and algebraic numbers, which are solutions to algebraic equations.
