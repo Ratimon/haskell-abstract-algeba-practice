@@ -92,6 +92,41 @@ The relationship between the set of transcendental numbers and the set of comple
 
 This means that the set of transcendental numbers is a proper subset of the set of complex numbers. In other words, all transcendental numbers are complex numbers, but not all complex numbers are transcendental. The complex numbers include both transcendental numbers and algebraic numbers, which are solutions to algebraic equations.
 
+```bash
+cabal run transcendental-number
+```
+
 4. Using the formal definition of equality, show that if two finite sets have different cardinality, they cannot be equal. (Demonstrating this for infinite sets is a little trickier, so we skip that).
 
 > **Answer**
+
+To start, let's consider two finite sets A and B with different cardinalities, and we want to show that A ≠ B.
+
+Formal Definition of Equality for Sets: Two sets X and Y are equal (denoted as X = Y) if and only if every element of X is an element of Y and every element of Y is an element of X.
+
+Now, let's proceed with the proof:
+
+Assumption: Let A and B be two finite sets with different cardinalities, i.e., `|A| ≠ |B|.`
+
+Proof by Contradiction: We assume that A = B and then derive a contradiction.
+
+Assume A = B.
+
+Since A = B, by the formal definition of equality, every element of A is an element of B and vice versa.
+
+Now, let's consider the cardinality of A. We know that A has |A| elements.
+Similarly, since A = B, B also has |A| elements (because every element of A is an element of B).
+
+However, we assumed that |A| ≠ |B|, which means A and B have different cardinalities.
+
+This contradiction arises from the assumption that A = B.
+
+Therefore, our initial assumption that A = B must be false.
+
+**Conclusion**: Since we have shown that the assumption A = B leads to a contradiction, and we know that A ≠ B from our initial assumption about their cardinalities, we can conclude that if two finite sets have different cardinalities, they cannot be equal.
+
+This proof demonstrates that if two finite sets have different cardinalities, they cannot be equal according to the formal definition of equality for sets.
+
+```bash
+cabal run cardinality
+```
