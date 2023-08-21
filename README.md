@@ -96,6 +96,8 @@ This means that the set of transcendental numbers is a proper subset of the set 
 cabal run transcendental-number
 ```
 
+### Cardinality
+
 4. Using the formal definition of equality, show that if two finite sets have different cardinality, they cannot be equal. (Demonstrating this for infinite sets is a little trickier, so we skip that).
 
 > **Answer**
@@ -130,3 +132,7 @@ This proof demonstrates that if two finite sets have different cardinalities, th
 ```bash
 cabal run cardinality
 ```
+
+### Cartesian product
+
+5. We can define a set such that every element from one set is one part of an ordered pair with an element from another set. For example, if `A = {1,2,3}` and `B = {x, y, z}`, `A × B = {(1, x), (1, y), (1, z), (2, x), …, (3, z)}` The result of a cartesian product is still a set: a set of ordered pairs. Cartesian products are not commutative. Compute the cartesian product of B × A 
