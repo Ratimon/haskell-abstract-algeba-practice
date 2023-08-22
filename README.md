@@ -175,3 +175,23 @@ cabal run mapping_2
 9. Define a mapping between positive integers and positive rational numbers (not the whole thing, obviously). It is possible to perfectly map the integers to rational numbers. Hint: draw a table to construct rational numbers where the columns are the numerators and the rows are the denominators.
 
 > **Answer**
+
+By using each cell in the table to represent a fraction in the form of numerator/denominator, you can achieve a perfect mapping between the positive integers and positive rational numbers.
+
+```bash
+     1   2   3   4   5   ...
+     1  1/1 2/1 3/1 4/1 5/1 ...
+     2  1/2 2/2 3/2 4/2 5/2 ...
+     3  1/3 2/3 3/3 4/3 5/3 ...
+     4  1/4 2/4 3/4 4/4 5/4 ...
+     5  1/5 2/5 3/5 4/5 5/5 ...
+     ... ... ... ... ... ...
+```
+
+In this table, each cell represents a rational number in the form of numerator/denominator. The numerator is the column number, and the denominator is the row number.
+
+For example, the cell in the second row and third column (2/3) corresponds to the positive rational number that is obtained by dividing the numerator 2 by the denominator 3.
+
+This table provides a perfect mapping between positive integers and positive rational numbers, as each positive rational number appears exactly once in the table.
+
+Keep in mind that this mapping covers only the positive rational numbers, not all rational numbers (including negative rationals).
