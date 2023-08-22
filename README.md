@@ -195,3 +195,7 @@ For example, the cell in the second row and third column (2/3) corresponds to th
 This table provides a perfect mapping between positive integers and positive rational numbers, as each positive rational number appears exactly once in the table.
 
 Keep in mind that this mapping covers only the positive rational numbers, not all rational numbers (including negative rationals).
+
+### Functions
+
+10. Let set A be `{1,2,3}` and set B be `{x,y,z}`. Define a function from A to B that is well-defined, but not surjective and not injective.
