@@ -154,3 +154,9 @@ cabal run cartesian_2
 ### Subsets of the cartesian product form a function
 
 7. Define a mapping (function) from integers `n ∈ 1,2,3,4,5,6` to the set `{even, odd}`.
+
+> **Answer**
+
+```bash
+cabal run mapping_1
+```

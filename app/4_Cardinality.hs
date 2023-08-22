@@ -20,4 +20,3 @@ main = do
     putStrLn $ "Are sets A and B equal? " ++ show (areSetsEqual setA setB)
     putStrLn $ "Are sets A and C equal? " ++ show (areSetsEqual setA setC)
     putStrLn $ "Are sets C and D equal? " ++ show (areSetsEqual setC setD)
-
