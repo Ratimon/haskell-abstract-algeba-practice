@@ -146,3 +146,11 @@ cabal run cartesian_1
 6. Compute the cartesian product of {1,2,3,4} and {3,6,9,12} (in that order). If you were to pick 4 particular ordered pairs from this, what arithmetic computation would that encode?
 
 > **Answer**
+
+```bash
+cabal run cartesian_2
+```
+
+### Subsets of the cartesian product form a function
+
+7. Define a mapping (function) from integers `n ∈ 1,2,3,4,5,6` to the set `{even, odd}`.
