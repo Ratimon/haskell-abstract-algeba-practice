@@ -219,3 +219,9 @@ Not Injective (Not one-to-one): The function is not injective because multiple e
 ```bash
 cabal run function
 ```
+
+### A “binary operator” in set theoretic terms
+
+A binary operator is a function from `A × A → A.` Basically, we take every possible pair from A (the cartesian product of A with itself) and map it to A.
+
+11. Pick a subset of ordered pairs that defines `a * b mod 3.` which is still in set `A`
