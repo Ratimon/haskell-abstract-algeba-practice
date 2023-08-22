@@ -199,3 +199,23 @@ Keep in mind that this mapping covers only the positive rational numbers, not al
 ### Functions
 
 10. Let set A be `{1,2,3}` and set B be `{x,y,z}`. Define a function from A to B that is well-defined, but not surjective and not injective.
+
+Function f: A → B
+
+f(1) = x
+f(2) = x
+f(3) = y
+
+Explanation:
+
+Well-Defined: Each element in set A is uniquely mapped to an element in set B according to the function f. For example, f(1) = x, f(2) = x, and f(3) = y.
+
+Not Surjective (Not onto): The function is not surjective because not all elements in set B are mapped to by elements in set A. In this case, the element z from set B does not have any corresponding element in set A that maps to it. The function doesn't cover all elements in the codomain (set B).
+
+Not Injective (Not one-to-one): The function is not injective because multiple elements in set A are mapped to the same element in set B. In this case, both 1 and 2 from set A are mapped to x in set B. Injections require that each element in the domain maps to a unique element in the codomain.
+
+> **Answer**
+
+```bash
+cabal run function
+```
