@@ -164,3 +164,7 @@ cabal run mapping_1
 8. Exercise: Take the cartesian product of the set of integers `0,1,2,…,8` and the polygons `triangle, square, pentagon, hexagon, heptagon, and octagon`. Define a mapping such that the integer maps to the number of sides on the shape. For example, the ordered pair `(4, □)` should be in the subset, but `(7,△)` should not be in the subset of the cartesian product.
 
 > **Answer**
+
+```bash
+cabal run mapping_2
+```

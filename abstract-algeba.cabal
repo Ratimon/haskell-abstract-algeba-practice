@@ -84,7 +84,7 @@ executable cartesian_1
     default-language: Haskell2010
 
 executable cartesian_2
-    main-is:          5_Cartesian_2.hs
+    main-is:          6_Cartesian_2.hs
 
     -- Modules included in this executable, other than Main.
     -- other-modules:
@@ -96,7 +96,7 @@ executable cartesian_2
     default-language: Haskell2010
 
 executable mapping_1
-    main-is:          6_mapping_1.hs
+    main-is:          7_mapping_1.hs
 
     -- Modules included in this executable, other than Main.
     -- other-modules:
@@ -108,7 +108,7 @@ executable mapping_1
     default-language: Haskell2010
 
 executable mapping_2
-    main-is:          6_mapping_2.hs
+    main-is:          8_mapping_2.hs
 
     -- Modules included in this executable, other than Main.
     -- other-modules:
