@@ -17,6 +17,10 @@ printProduct (a, b) = putStrLn $ "   " ++ show a ++ "   |   " ++ show b ++ "   |
 pickSubset :: [(Int, Int)] -> [(Int, Int)]
 pickSubset ls = filter (\(a, b) -> multMod3 a b `elem` setA) ls
 
+-- Print subset as a table row
+printSubset :: (Int, Int) -> IO ()
+printSubset (a, b) = putStrLn $ "(" ++ show a ++ ", " ++ show b ++ ")"
+
 -- Compute the binary operator for each pair in the cartesian product
 computeMultMod3 :: [(Int, Int)] -> [((Int, Int), Int)]
 computeMultMod3 pairs = [((a, b), multMod3 a b) | (a, b) <- pairs]
@@ -32,8 +36,12 @@ main = do
     putStrLn "------------------------------"
     putStrLn "   a   |   b   |  a * b mod 3"
     putStrLn "------------------------------"
-    
     mapM_ printProduct cartesianProduct
+
+    putStrLn "------------------------------"
+    putStrLn "Pick a subset of ordered pairs that defines a * b mod 3."
+    putStrLn "------------------------------"
+    mapM_ printSubset (pickSubset cartesianProduct)
 
     putStrLn "------------------------------"
     putStrLn "Computed Results:"
