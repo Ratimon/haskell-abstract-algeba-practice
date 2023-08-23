@@ -225,3 +225,9 @@ cabal run function
 A binary operator is a function from `A × A → A.` Basically, we take every possible pair from A (the cartesian product of A with itself) and map it to A.
 
 11. Pick a subset of ordered pairs that defines `a * b mod 3.` which is still in set `A`
+
+> **Answer**
+
+```bash
+cabal run binary-operation
+```

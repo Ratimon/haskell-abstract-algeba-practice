@@ -36,5 +36,5 @@ main = do
     mapM_ printMapping filteredCartesianProduct
     putStrLn "-----------------"
 
-    -- print cartesianProduct
-    -- print filteredCartesianProduct
+    print cartesianProduct
+    print filteredCartesianProduct
