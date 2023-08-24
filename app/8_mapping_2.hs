@@ -18,23 +18,28 @@ mapToSides "hexagon" = 6
 mapToSides "heptagon" = 7
 mapToSides "octagon" = 8
 
--- Filter the cartesian product using the mapping
-filteredCartesianProduct :: [(Int, String)]
-filteredCartesianProduct = filter (\(n, shape) -> n == mapToSides shape) cartesianProduct
+-- Define a mapping such that the integer maps to the number of sides on the shape
+defineMapping :: [(Int, String)] -> [(Int, String)]
+defineMapping ls = filter (\(n, shape) -> n == mapToSides shape) ls
 
--- Print a single mapping line
-printMapping :: (Int, String) -> IO ()
-printMapping (n, shape) = putStrLn ("|     " ++ show n ++ "      |   " ++ shape ++ "   |")
+-- Print a Cartesian Product
+printProduct :: (Int, String) -> IO ()
+printProduct (n, shape) = putStrLn ("|     " ++ show n ++ "      |   " ++ shape ++ "   |")
 
--- Display the filtered mapping
+-- Print a mapping result
+printResult :: (Int, String) -> IO ()
+printResult (n, shape) = putStrLn $ "(" ++ show n ++ ", " ++ show shape ++ ") " 
+
 main :: IO ()
 main = do
-    putStrLn "Filtered Mapping:"
+    putStrLn "Cartesian Product:"
     putStrLn "-----------------"
     putStrLn "|  Integer  |  Shape    |"
     putStrLn "-----------------"
-    mapM_ printMapping filteredCartesianProduct
+    mapM_ printProduct cartesianProduct
     putStrLn "-----------------"
 
-    print cartesianProduct
-    print filteredCartesianProduct
+    putStrLn "------------------------------"
+    putStrLn "Subsets:"
+    putStrLn "------------------------------"
+    mapM_ printResult (defineMapping cartesianProduct)

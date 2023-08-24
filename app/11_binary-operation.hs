@@ -29,7 +29,6 @@ computeMultMod3 pairs = [((a, b), multMod3 a b) | (a, b) <- pairs]
 printResult :: ((Int, Int), Int) -> IO ()
 printResult ((a, b), result) = putStrLn $ "(" ++ show a ++ ", " ++ show b ++ ")   |   " ++ show result
 
--- Main function
 main :: IO ()
 main = do
     putStrLn "Multiplication Modulo 3 Table:"
