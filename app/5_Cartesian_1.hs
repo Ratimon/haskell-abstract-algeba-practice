@@ -9,9 +9,9 @@ setB = ['x', 'y', 'z']
 cartesianProduct :: [(Char, Int)]
 cartesianProduct = [(x, y) | x <- setB, y <- setA]
 
--- Print an ordered pair (b, a) as a table row
-printPair :: (Char, Int) -> IO ()
-printPair (b, a) = putStrLn $ "   " ++ [b] ++ "   |   " ++ show a ++ "   |   (" ++ [b] ++ ", " ++ show a ++ ")"
+-- Print an ordered pair (a, b) as a table row
+printProduct :: (Char, Int) -> IO ()
+printProduct (a, b) = putStrLn $ "   " ++ show a ++ "   |   " ++ show b ++ "   |   (" ++ show a ++ ", " ++ show b ++ ")"
 
 -- Display Cartesian product as a table
 main :: IO ()
@@ -20,6 +20,6 @@ main = do
     putStrLn "-------------------------"
     putStrLn "   B   |   A   |  B × A "
     putStrLn "-------------------------"
-    mapM_ printPair cartesianProduct
+    mapM_ printProduct cartesianProduct
     putStrLn "-------------------------"
 
