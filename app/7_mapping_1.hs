@@ -15,26 +15,35 @@ mapToEvenOdd n
     | even n = "even"
     | otherwise = "odd"
 
--- Filter the cartesian product using mapToEvenOdd
-filteredCartesianProduct :: [(Int, String)]
-filteredCartesianProduct = filter (\(n, mapping) -> mapping == mapToEvenOdd n) cartesianProduct
+-- Define a mapping such that the integer maps to the number of sides on the shape
+defineMapping :: [(Int, String)] -> [(Int, String)]
+defineMapping ls = filter (\(n, mapping) -> mapping == mapToEvenOdd n) ls
 
 printMapping :: (Int, String) -> IO ()
 printMapping (n, mapping) = putStrLn ("|     " ++ show n ++ "      |   " ++ mapping ++ "   |")
 
--- Display the filtered mapping
+-- Print a Cartesian Product
+printProduct :: (Int, String) -> IO ()
+printProduct (n, shape) = putStrLn ("|     " ++ show n ++ "      |   " ++ shape ++ "   |")
+
+-- Print a mapping result
+printResult :: (Int, String) -> IO ()
+printResult (n, shape) = putStrLn $ "(" ++ show n ++ ", " ++ show shape ++ ") " 
+
 main :: IO ()
 main = do
-    putStrLn "Filtered Mapping:"
-    putStrLn "------------------"
-    putStrLn "|  Integer  |  Mapping  |"
-    putStrLn "------------------"
-    mapM_ printMapping filteredCartesianProduct
-    putStrLn "------------------"
 
-    -- print cartesianProduct
-    -- print filteredCartesianProduct
+    putStrLn "Cartesian Product A × B:"
+    putStrLn "-----------------"
+    putStrLn "|  Integer  |  Mapping    |"
+    putStrLn "-----------------"
+    mapM_ printProduct cartesianProduct
+    putStrLn "-----------------"
 
+    putStrLn "------------------------------"
+    putStrLn "Mapping"
+    putStrLn "------------------------------"
+    mapM_ printResult (defineMapping cartesianProduct)
 
 
 

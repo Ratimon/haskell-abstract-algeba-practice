@@ -31,10 +31,10 @@ printResult ((a, b), result) = putStrLn $ "(" ++ show a ++ ", " ++ show b ++ ") 
 
 main :: IO ()
 main = do
-    putStrLn "Multiplication Modulo 3 Table:"
-    putStrLn "------------------------------"
-    putStrLn "   a   |   b   |  a * b mod 3"
-    putStrLn "------------------------------"
+    putStrLn "Cartesian Product A × A:"
+    putStrLn "-------------------------"
+    putStrLn "   A   |   A   |  A × A "
+    putStrLn "-------------------------"
     mapM_ printProduct cartesianProduct
 
     putStrLn "------------------------------"
@@ -43,6 +43,8 @@ main = do
     mapM_ printSubset (pickSubset cartesianProduct)
 
     putStrLn "------------------------------"
-    putStrLn "Computed Results:"
+    putStrLn "Multiplication Modulo 3 Table:"
+    putStrLn "------------------------------"
+    putStrLn "   a   |   b   |  a * b mod 3"    
     putStrLn "------------------------------"
     mapM_ printResult (computeMultMod3 cartesianProduct)

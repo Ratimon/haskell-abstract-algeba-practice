@@ -32,7 +32,7 @@ printResult (n, shape) = putStrLn $ "(" ++ show n ++ ", " ++ show shape ++ ") "
 
 main :: IO ()
 main = do
-    putStrLn "Cartesian Product:"
+    putStrLn "Cartesian Product A × B:"
     putStrLn "-----------------"
     putStrLn "|  Integer  |  Shape    |"
     putStrLn "-----------------"
@@ -40,6 +40,6 @@ main = do
     putStrLn "-----------------"
 
     putStrLn "------------------------------"
-    putStrLn "Subsets:"
+    putStrLn "Mapping"
     putStrLn "------------------------------"
     mapM_ printResult (defineMapping cartesianProduct)
