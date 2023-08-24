@@ -231,3 +231,13 @@ A binary operator is a function from `A × A → A.` Basically, we take every po
 ```bash
 cabal run binary-operation
 ```
+
+12. Here is an interesting fact about the relation between (A x A) and A above: if the binary operator is commutative, then the map from (A x A) to A cannot be injective if the cardinality of the set is 2 or greater.
+
+Demonstrate the above statement is correct by reasoning from ((a, b), c) and ((b, a), c) and the definition of injective.
+
+> **Answer**
+
+```bash
+cabal run 
+```
