@@ -238,6 +238,20 @@ Demonstrate the above statement is correct by reasoning from ((a, b), c) and ((b
 
 > **Answer**
 
-```bash
-cabal run 
-```
+Let's reason through this using the properties of injective functions and the fact that the binary operator is commutative. We will demonstrate that if the binary operator is commutative, then the map from (A x A) to A cannot be injective when the cardinality of set A is 2 or greater.
+
+First, let's assume that the binary operator '*' is commutative. This means that for any elements a and b in set A, a * b = b * a.
+
+Now, let's consider two distinct elements (a, b) and (b, a) from the Cartesian product (A x A), where a and b are distinct elements from set A. According to the commutative property of the binary operator, we have:
+
+(a, b) = (b, a)
+
+However, by definition, two ordered pairs are equal if and only if their corresponding elements are equal in order and value. Since a and b are distinct (a ≠ b), the ordered pairs (a, b) and (b, a) are distinct as well.
+
+Now, let's consider the map f from (A x A) to A that maps ((a, b), c) to a * c. According to our assumptions, this map is well-defined since the binary operator is commutative.
+
+If f were injective, it would mean that each unique element in the domain (A x A) is mapped to a unique element in the co-domain A. However, we have just shown that the ordered pairs (a, b) and (b, a) are distinct, but they are mapped to the same element a in the co-domain A due to the commutative property of the binary operator.
+
+This violates the injective property, as injective functions require distinct elements in the domain to be mapped to distinct elements in the codomain.
+
+Therefore, we have demonstrated that when the binary operator is commutative, the map from (A x A) to A cannot be injective when the cardinality of set A is 2 or greater. This is because distinct ordered pairs in the domain may be mapped to the same element in the codomain due to the commutativity of the binary operator.
