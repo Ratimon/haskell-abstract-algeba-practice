@@ -255,3 +255,8 @@ If f were injective, it would mean that each unique element in the domain (A x A
 This violates the injective property, as injective functions require distinct elements in the domain to be mapped to distinct elements in the codomain.
 
 Therefore, we have demonstrated that when the binary operator is commutative, the map from (A x A) to A cannot be injective when the cardinality of set A is 2 or greater. This is because distinct ordered pairs in the domain may be mapped to the same element in the codomain due to the commutativity of the binary operator.
+
+
+13.  Define our set A to be the numbers 0,1,2,3,4 and our binary operator to be subtraction modulo 5. Define all the ordered pairs of A ⨉ A in a table, then map that set of ordered pairs to A.
+
+> **Answer**
