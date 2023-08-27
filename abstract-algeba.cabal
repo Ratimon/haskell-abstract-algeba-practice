@@ -82,3 +82,9 @@ executable binary-operation
     build-depends:    base ^>=4.16.4.0
     hs-source-dirs:   app
     default-language: Haskell2010
+
+executable binary-operation_2
+    main-is:          12_binary-operation_2.hs
+    build-depends:    base ^>=4.16.4.0
+    hs-source-dirs:   app
+    default-language: Haskell2010
