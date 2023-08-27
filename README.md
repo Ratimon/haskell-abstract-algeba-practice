@@ -229,7 +229,7 @@ A binary operator is a function from `A × A → A.` Basically, we take every po
 > **Answer**
 
 ```bash
-cabal run binary-operation
+cabal run binary-operation_1
 ```
 
 12. Here is an interesting fact about the relation between (A x A) and A above: if the binary operator is commutative, then the map from (A x A) to A cannot be injective if the cardinality of the set is 2 or greater.
@@ -260,3 +260,9 @@ Therefore, we have demonstrated that when the binary operator is commutative, th
 13.  Define our set A to be the numbers 0,1,2,3,4 and our binary operator to be subtraction modulo 5. Define all the ordered pairs of A ⨉ A in a table, then map that set of ordered pairs to A.
 
 > **Answer**
+
+```bash
+cabal run binary-operation_3
+```
+
+14. Work out for yourself that concatenating “foo”, “bar”, “baz” in that order is associative. Remember, associative means `(A op B) op C = A op (B op C)`.
