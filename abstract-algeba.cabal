@@ -77,14 +77,14 @@ executable function
     hs-source-dirs:   app
     default-language: Haskell2010
 
-executable binary-operation
-    main-is:          11_binary-operation.hs
+executable binary-operation_1
+    main-is:          11_binary-operation_1.hs
     build-depends:    base ^>=4.16.4.0
     hs-source-dirs:   app
     default-language: Haskell2010
 
-executable binary-operation_2
-    main-is:          12_binary-operation_2.hs
+executable binary-operation_3
+    main-is:          13_binary-operation_3.hs
     build-depends:    base ^>=4.16.4.0
     hs-source-dirs:   app
     default-language: Haskell2010
