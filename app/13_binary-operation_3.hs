@@ -14,21 +14,9 @@ cartesianProduct = [(x, y) | x <- setA, y <- setA]
 printProduct :: (Int, Int) -> IO ()
 printProduct (a, b) = putStrLn $ "   " ++ show a ++ "   |   " ++ show b ++ "   |   (" ++ show a ++ ", " ++ show b ++ ")"
 
--- -- Map the ordered pairs to A using the binary operator
--- mapToA :: [(Int, Int)] -> [Int]
--- mapToA pairs = [subMod5 a b | (a, b) <- pairs]
-
 -- Map the ordered pairs to A using the binary operator
 mapToA :: [(Int, Int)] -> [((Int, Int), Int)]
 mapToA pairs = [((a, b) ,subMod5 a b) | (a, b) <- pairs]
-
--- -- Print a mapped value
--- printMappedValue :: Int -> IO ()
--- printMappedValue a = putStrLn $ show a
-
--- -- Compute the binary operator for each pair in the cartesian product
--- computeMultMod3 :: [(Int, Int)] -> [((Int, Int), Int)]
--- computeMultMod3 pairs = [((a, b), multMod3 a b) | (a, b) <- pairs]
 
 -- Print a single pair and its result
 printResult :: ((Int, Int), Int) -> IO ()
@@ -45,5 +33,3 @@ main = do
     putStrLn "Mapped to A using subtraction modulo 5:"
     putStrLn "---------------------"
     mapM_ printResult (mapToA cartesianProduct)
-
-

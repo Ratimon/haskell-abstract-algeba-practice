@@ -266,3 +266,9 @@ cabal run binary-operation_3
 ```
 
 14. Work out for yourself that concatenating “foo”, “bar”, “baz” in that order is associative. Remember, associative means `(A op B) op C = A op (B op C)`.
+
+> **Answer**
+
+```bash
+cabal run 
+```
