@@ -347,3 +347,7 @@ In summary:
   - All Integers (Including Negative): Semigroup
   - Positive Integers (Zero or Greater): Semigroup
   - Positive Integers (Zero or Greater) with Identity Element: Monoid
+
+17. Let our set be all 3 bit binary numbers (a set of cardinality 8). Let our possible binary operators be bit-wise and, bit-wise or, bit-wise xor, bit-wise nor, bit-wise xnor, and bit-wise nand. Clearly this is closed because the output is a 3 bit binary number. For each binary operator, determine if the set under that binary operator is a magma, semigroup, or monoid.
+
+> **Answer**
