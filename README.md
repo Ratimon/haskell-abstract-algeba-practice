@@ -311,3 +311,39 @@ Since the binary operation is associative, this example constitutes a semigroup.
 
 
 16. Let our binary operator be the function min(a,b) over integers. Is this a magma, semigroup, or monoid? What if we restrict the domain to be positive integers (zero or greater)? What about the binary operator max(a,b) over those two domains?
+
+> **Answer**
+
+**Binary Operator: min(a, b)**
+
+- **All Integers (Including Negative):** Semigroup
+  - The binary operation `min(a, b)` is closed and associative for all integers, including negative integers. Therefore, it forms a semigroup.
+
+- **Positive Integers (Zero or Greater):** Semigroup
+  - The binary operation `min(a, b)` is closed and associative for positive integers (zero or greater). It also forms a semigroup.
+
+- **Positive Integers (Zero or Greater) with Identity Element: Monoid**
+  - The identity element for this case is infinity (∞), as min(a, ∞) = min(∞, a) = a for any positive integer a. Therefore, over positive integers with an identity element, it forms a monoid.
+
+**Binary Operator: max(a, b)**
+
+- **All Integers (Including Negative):** Semigroup
+  - The binary operation `max(a, b)` is closed and associative for all integers, including negative integers. It forms a semigroup.
+
+- **Positive Integers (Zero or Greater):** Semigroup
+  - The binary operation `max(a, b)` is closed and associative for positive integers (zero or greater). It forms a semigroup.
+
+- **Positive Integers (Zero or Greater) with Identity Element: Monoid**
+  - The identity element for this case is 0, as max(a, 0) = max(0, a) = a for any positive integer a. It forms a monoid over positive integers with an identity element.
+
+In summary:
+
+- **min(a, b):**
+  - All Integers (Including Negative): Semigroup
+  - Positive Integers (Zero or Greater): Semigroup
+  - Positive Integers (Zero or Greater) with Identity Element: Monoid
+
+- **max(a, b):**
+  - All Integers (Including Negative): Semigroup
+  - Positive Integers (Zero or Greater): Semigroup
+  - Positive Integers (Zero or Greater) with Identity Element: Monoid
