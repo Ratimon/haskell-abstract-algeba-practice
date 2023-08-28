@@ -270,7 +270,7 @@ cabal run binary-operation_3
 > **Answer**
 
 ```bash
-cabal run 
+cabal run semi-group_1
 ```
 
 15. Give an example of `a magma` and `a semigroup`. The magma must not be a semigroup.
@@ -426,3 +426,19 @@ In summary:
 None of these operators form semigroups or monoids since they do not have identity elements.
 
 18. Why can’t strings under concatenation be a group?
+
+> **Answer**
+
+Strings under concatenation cannot form a group because they lack the property of having an inverse element for each element in the set.
+
+In a group, for every element "a" in the set, there must exist an inverse element "a'" such that the binary operation of "a" and "a'" results in the identity element. In the case of integers with addition, the identity element is zero, and the inverse of an integer "x" is its negation "-x".
+
+However, when dealing with strings under concatenation, there is no clear definition of an inverse element for every string. Concatenation of two strings "s1" and "s2" results in a longer string "s1s2", and it's not possible to find a single string that, when concatenated with "s1" or "s2", will always result in an identity string.
+
+For example, consider the string "abc". There is no single string "s'" that, when concatenated with "abc" or any other string, will always result in an empty string (identity element). Different strings have different lengths and content, making it impossible to define a single inverse string for all possible cases.
+
+This lack of a consistent inverse element for each string is why strings under concatenation do not form a group. Groups require an inverse for every element, and the properties of string concatenation make it incompatible with the requirements of a group.
+
+```bash
+cabal run group-ex_1
+```
