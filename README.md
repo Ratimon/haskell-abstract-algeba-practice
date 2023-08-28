@@ -273,7 +273,7 @@ cabal run binary-operation_3
 cabal run 
 ```
 
-15. Give an example of `a magma` and `a semigroup`. The magma must not be a semigroup. Don’t use the examples above.
+15. Give an example of `a magma` and `a semigroup`. The magma must not be a semigroup.
 
 > **Answer**
 
@@ -424,3 +424,5 @@ In summary:
 - Bit-wise NAND: Magma
 
 None of these operators form semigroups or monoids since they do not have identity elements.
+
+18. Why can’t strings under concatenation be a group?
