@@ -272,3 +272,7 @@ cabal run binary-operation_3
 ```bash
 cabal run 
 ```
+
+15. Give an example of `a magma` and `a semigroup`. The magma must not be a semigroup. Don’t use the examples above.
+
+> **Answer**
