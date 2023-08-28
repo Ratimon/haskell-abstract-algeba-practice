@@ -308,3 +308,6 @@ Since the binary operation is associative, this example constitutes a semigroup.
 > **Note**💡
 
 > Addition over positive integers without zero is a semigroup, but if you include zero, it becomes a monoid.
+
+
+16. Let our binary operator be the function min(a,b) over integers. Is this a magma, semigroup, or monoid? What if we restrict the domain to be positive integers (zero or greater)? What about the binary operator max(a,b) over those two domains?
