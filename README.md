@@ -276,3 +276,35 @@ cabal run
 15. Give an example of `a magma` and `a semigroup`. The magma must not be a semigroup. Don’t use the examples above.
 
 > **Answer**
+
+**Magma Example:**
+
+Let's Consider the set of positive integers {1, 2, 3, ...} as the magma's underlying set. The binary operation is defined as taking the average of two numbers:
+
+- 2 ⊕ 3 = (2 + 3) / 2 = 2.5
+- 4 ⊕ 2 = (4 + 2) / 2 = 3
+- 5 ⊕ 5 = (5 + 5) / 2 = 5
+
+This binary operation is not associative, as shown in the example below:
+
+- (2 ⊕ 3) ⊕ 4 = (2.5) ⊕ 4 = 3.25
+- 2 ⊕ (3 ⊕ 4) = 2 ⊕ (3.5) = 2.75
+
+Since this binary operation is not associative, this example constitutes a magma that is not a semigroup.
+
+**Semigroup Example:**
+
+Let's consider the set of non-negative integers {1, 2, ...} as the semigroup's underlying set. The binary operation is defined as addition:
+
+2 ⨁ 3 = 2 + 3 = 5
+4 ⨁ 2 = 4 + 2 = 6
+5 ⨁ 5 = 5 + 5 = 10
+The binary operation of addition is associative:
+
+(2 ⨁ 3) ⨁ 4 = (5) ⨁ 4 = 5 + 4 = 9
+2 ⨁ (3 ⨁ 4) = 2 ⨁ (7) = 2 + 7 = 9
+Since the binary operation is associative, this example constitutes a semigroup.
+
+> **Note**💡
+
+> Addition over positive integers without zero is a semigroup, but if you include zero, it becomes a monoid.
