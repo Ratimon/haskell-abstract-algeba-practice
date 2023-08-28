@@ -444,3 +444,21 @@ cabal run group-ex_1
 ```
 
 19. Polynomials under addition satisfy the property of a group. Demonstrate this is the case by showing it matches the three properties that define a group.
+
+Polynomials under addition do indeed satisfy the properties of a group. Let's demonstrate this by showing how they match the three defining properties of a group:
+
+1. **Closure:** The sum of two polynomials is still a polynomial. If we have two polynomials \(p(x)\) and \(q(x)\), their sum \(p(x) + q(x)\) is also a polynomial.
+
+2. **Associativity:** Polynomial addition is associative. For any three polynomials \(p(x)\), \(q(x)\), and \(r(x)\), we have \((p(x) + q(x)) + r(x) = p(x) + (q(x) + r(x))\).
+
+3. **Identity Element:** The identity element for polynomial addition is the zero polynomial, denoted as \(0(x)\). For any polynomial \(p(x)\), we have \(p(x) + 0(x) = p(x)\) and \(0(x) + p(x) = p(x)\).
+
+Now, let's show the third property, the existence of inverse elements:
+
+4. **Inverse Element:** For every polynomial \(p(x)\), there exists an inverse polynomial \(-p(x)\) such that \(p(x) + (-p(x)) = 0(x)\) and \((-p(x)) + p(x) = 0(x)\).
+
+Therefore, polynomials under addition satisfy the closure property, associativity property, identity element property, and inverse element property, making them a group with respect to the binary operation of addition.
+
+```bash
+cabal run group-ex_2
+```
