@@ -442,3 +442,5 @@ This lack of a consistent inverse element for each string is why strings under c
 ```bash
 cabal run group-ex_1
 ```
+
+19. Polynomials under addition satisfy the property of a group. Demonstrate this is the case by showing it matches the three properties that define a group.
