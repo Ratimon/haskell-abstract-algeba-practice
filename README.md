@@ -351,3 +351,76 @@ In summary:
 17. Let our set be all 3 bit binary numbers (a set of cardinality 8). Let our possible binary operators be bit-wise and, bit-wise or, bit-wise xor, bit-wise nor, bit-wise xnor, and bit-wise nand. Clearly this is closed because the output is a 3 bit binary number. For each binary operator, determine if the set under that binary operator is a magma, semigroup, or monoid.
 
 > **Answer**
+
+Let's analyze each binary operator in turn:
+
+**Binary Operator: Bit-wise AND**
+
+- **Closed:** The result of bit-wise AND between two 3-bit binary numbers is a 3-bit binary number. Hence, it is closed.
+
+- **Associative:** Bit-wise AND is associative since the order of operations does not matter.
+
+- **Identity Element:** There is no identity element (element such that a ⋆ e = e ⋆ a = a) in the set under bit-wise AND.
+
+Overall, the set under bit-wise AND is a magma.
+
+**Binary Operator: Bit-wise OR**
+
+- **Closed:** The result of bit-wise OR between two 3-bit binary numbers is a 3-bit binary number. Hence, it is closed.
+
+- **Associative:** Bit-wise OR is associative since the order of operations does not matter.
+
+- **Identity Element:** There is no identity element (element such that a ⋆ e = e ⋆ a = a) in the set under bit-wise OR.
+
+Overall, the set under bit-wise OR is a magma.
+
+**Binary Operator: Bit-wise XOR**
+
+- **Closed:** The result of bit-wise XOR between two 3-bit binary numbers is a 3-bit binary number. Hence, it is closed.
+
+- **Associative:** Bit-wise XOR is associative since the order of operations does not matter.
+
+- **Identity Element:** There is no identity element (element such that a ⋆ e = e ⋆ a = a) in the set under bit-wise XOR.
+
+Overall, the set under bit-wise XOR is a magma.
+
+**Binary Operator: Bit-wise NOR**
+
+- **Closed:** The result of bit-wise NOR between two 3-bit binary numbers is a 3-bit binary number. Hence, it is closed.
+
+- **Associative:** Bit-wise NOR is associative since the order of operations does not matter.
+
+- **Identity Element:** There is no identity element (element such that a ⋆ e = e ⋆ a = a) in the set under bit-wise NOR.
+
+Overall, the set under bit-wise NOR is a magma.
+
+**Binary Operator: Bit-wise XNOR**
+
+- **Closed:** The result of bit-wise XNOR between two 3-bit binary numbers is a 3-bit binary number. Hence, it is closed.
+
+- **Associative:** Bit-wise XNOR is associative since the order of operations does not matter.
+
+- **Identity Element:** There is no identity element (element such that a ⋆ e = e ⋆ a = a) in the set under bit-wise XNOR.
+
+Overall, the set under bit-wise XNOR is a magma.
+
+**Binary Operator: Bit-wise NAND**
+
+- **Closed:** The result of bit-wise NAND between two 3-bit binary numbers is a 3-bit binary number. Hence, it is closed.
+
+- **Associative:** Bit-wise NAND is associative since the order of operations does not matter.
+
+- **Identity Element:** There is no identity element (element such that a ⋆ e = e ⋆ a = a) in the set under bit-wise NAND.
+
+Overall, the set under bit-wise NAND is a magma.
+
+In summary:
+
+- Bit-wise AND: Magma
+- Bit-wise OR: Magma
+- Bit-wise XOR: Magma
+- Bit-wise NOR: Magma
+- Bit-wise XNOR: Magma
+- Bit-wise NAND: Magma
+
+None of these operators form semigroups or monoids since they do not have identity elements.
