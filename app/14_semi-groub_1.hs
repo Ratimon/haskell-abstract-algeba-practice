@@ -13,4 +13,7 @@ isAssociative a b c = (a <> b) <> c == a <> (b <> c)
 
 main :: IO ()
 main = do
-     putStrLn $ "Is concatenation of 'foo', 'bar', and 'baz' associative? " ++ show (isAssociative "foo" "bar" "baz")
+    putStrLn "-------------------------------------------------------"
+    putStrLn "-------------------------------------------------------"
+    
+    putStrLn $ "Is concatenation of 'foo', 'bar', and 'baz' associative? " ++ show (isAssociative "foo" "bar" "baz")
