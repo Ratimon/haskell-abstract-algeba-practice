@@ -1,18 +1,16 @@
--- Define the strings
-stringFoo :: String
-stringFoo = "foo"
+import Data.Semigroup
 
-stringBar :: String
-stringBar = "bar"
+data ConcatString x = ConcatString String
 
-stringBaz :: String
-stringBaz = "baz"
+instance Semigroup (ConcatString x) where
+    (<>) (ConcatString x1) (ConcatString x2) = ConcatString newX
+      where
+        newX = x1 ++ x2
 
--- Associativity check
-isAssociative :: Bool
-isAssociative = (stringFoo ++ stringBar) ++ stringBaz == stringFoo ++ (stringBar ++ stringBaz)
+-- Associativity property: (A op B) op C = A op (B op C)
+isAssociative ::  String-> String -> String -> Bool
+isAssociative a b c = (a <> b) <> c == a <> (b <> c)
 
--- Main function
 main :: IO ()
 main = do
-    putStrLn $ "Is concatenation of 'foo', 'bar', and 'baz' associative? " ++ show isAssociative
+     putStrLn $ "Is concatenation of 'foo', 'bar', and 'baz' associative? " ++ show (isAssociative "foo" "bar" "baz")
