@@ -1,24 +1,39 @@
-import Data.List (isInfixOf)
+import Data.Monoid
 
--- Check if string 'a' is the inverse of string 'b'
-isInverse :: String -> String -> Bool
-isInverse a b = a ++ b == ""   -- Concatenating an empty string is the identity
+-- Define a newtype wrapper for strings
+newtype ConcatString = ConcatString String
 
--- Check if a set of strings forms a group under concatenation
-isGroup :: [String] -> Bool
-isGroup strings = all (\a -> any (\b -> isInverse a b) strings) strings
+-- Define a custom Semigroup instance for ConcatString
+instance Semigroup ConcatString where
+    (ConcatString s1) <> (ConcatString s2) = ConcatString (s1 ++ s2)
 
--- Example strings
-exampleStrings :: [String]
-exampleStrings = ["foo", "bar", "baz"]
+-- Define a custom Monoid instance for ConcatString
+instance Monoid ConcatString where
+    mempty = ConcatString ""
+    mappend = (<>)
+
+instance Show ConcatString where
+    show (ConcatString a) = show a
+
+instance Eq ConcatString where
+    (ConcatString a) == (ConcatString b) = a == b
+
+-- Function to check if an inverse exists for a ConcatString
+inverseCheck :: ConcatString -> Bool
+inverseCheck (ConcatString str) = ConcatString (str ++ str) == mempty
 
 main :: IO ()
 main = do
-  putStrLn "Strings under Concatenation:"
-  putStrLn "---------------------------"
+    putStrLn "Checking Monoid Properties for Strings under Concatenation"
+    putStrLn "-------------------------------------------------------"
+    
+    let str1 = ConcatString "hello"
+    let str2 = ConcatString "world"
+    let str3 = ConcatString "foo"
+    
+    putStrLn $ "Concatenating '" ++ show str1 ++ "' and '" ++ show str2 ++ "': " ++ show (str1 <> str2)
+    putStrLn $ "Concatenating '" ++ show str1 ++ "' and mempty: " ++ show (str1 <> mempty)
+    
+    putStrLn $ "Is Group?: Inverse check for '" ++ show str3 ++ "': " ++ show (inverseCheck str3)
 
-  putStrLn "Example Strings:"
-  print exampleStrings
-
-  putStrLn "Is a Group?"
-  print $ isGroup exampleStrings
+    putStrLn $ "Is Group?: Inverse check for '" ++ show str3 ++ "': " ++ show (inverseCheck str3)
