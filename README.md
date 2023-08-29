@@ -326,7 +326,7 @@ cabal run semi-group_2
   - The binary operation `min(a, b)` is closed and associative for positive integers (zero or greater). It also forms a semigroup.
 
 - **Positive Integers (Zero or Greater) with Identity Element: Monoid**
-  - The identity element for this case is infinity (∞), as min(a, ∞) = min(∞, a) = a for any positive integer a. Therefore, over positive integers with an identity element, it forms a monoid.
+  - The identity element for this case is `infinity (∞)`, as min(a, ∞) = min(∞, a) = a for any positive integer a. Therefore, over positive integers with an identity element, it forms a monoid.
 
 **Binary Operator: max(a, b)**
 
@@ -427,6 +427,10 @@ In summary:
 - Bit-wise NAND: Magma
 
 None of these operators form semigroups or monoids since they do not have identity elements.
+
+```bash
+cabal run monoid_1
+```
 
 18. Why can’t strings under concatenation be a group?
 

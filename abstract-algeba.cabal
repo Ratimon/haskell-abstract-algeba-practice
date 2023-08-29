@@ -101,6 +101,12 @@ executable semi-group_2
     hs-source-dirs:   app
     default-language: Haskell2010
 
+executable monoid_1
+    main-is:          16_monoid_1.hs
+    build-depends:    base ^>=4.16.4.0
+    hs-source-dirs:   app
+    default-language: Haskell2010
+
 executable group-ex_1
     main-is:          18_group_1.hs
     build-depends:    base ^>=4.16.4.0, groups ^>=0.5.3
