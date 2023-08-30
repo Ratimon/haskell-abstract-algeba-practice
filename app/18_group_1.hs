@@ -1,7 +1,7 @@
 import Data.Monoid
 
 -- Define a newtype wrapper for strings
-newtype ConcatString = ConcatString String
+newtype ConcatString = ConcatString String deriving (Eq, Show)
 
 -- Define a custom Semigroup instance for ConcatString
 instance Semigroup ConcatString where
@@ -11,12 +11,6 @@ instance Semigroup ConcatString where
 instance Monoid ConcatString where
     mempty = ConcatString ""
     mappend = (<>)
-
-instance Show ConcatString where
-    show (ConcatString a) = show a
-
-instance Eq ConcatString where
-    (ConcatString a) == (ConcatString b) = a == b
 
 -- Function to check if an inverse exists for a ConcatString
 inverseCheck :: ConcatString -> Bool
@@ -34,6 +28,4 @@ main = do
     putStrLn $ "Concatenating '" ++ show str1 ++ "' and '" ++ show str2 ++ "': " ++ show (str1 <> str2)
     putStrLn $ "Concatenating '" ++ show str1 ++ "' and mempty: " ++ show (str1 <> mempty)
     
-    putStrLn $ "Is Group?: Inverse check for '" ++ show str3 ++ "': " ++ show (inverseCheck str3)
-
     putStrLn $ "Is Group?: Inverse check for '" ++ show str3 ++ "': " ++ show (inverseCheck str3)

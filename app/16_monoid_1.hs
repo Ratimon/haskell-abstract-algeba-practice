@@ -3,16 +3,10 @@ import Data.Monoid
 import Numeric.Natural
 
 -- Wrapper type for min(a, b)
-newtype MinNatural = MinNatural Natural
+newtype MinNatural = MinNatural Natural deriving (Eq, Show)
 
 -- Wrapper type for max(a, b)
-newtype MaxNatural = MaxNatural Natural
-
-instance Show MinNatural where
-    show (MinNatural a) = show a
-
-instance Show MaxNatural where
-    show (MaxNatural a) = show a
+newtype MaxNatural = MaxNatural Natural deriving (Eq, Show)
 
 instance Semigroup MinNatural where
     (MinNatural a) <> (MinNatural b) = MinNatural (min a b)
@@ -27,12 +21,6 @@ instance Monoid MinNatural where
 instance Monoid MaxNatural where
     mempty = MaxNatural 0
     mappend = (<>)
-
-instance Eq MinNatural where
-    (MinNatural a) == (MinNatural b) = a == b
-
-instance Eq MaxNatural where
-    (MaxNatural a) == (MaxNatural b) = a == b
 
 -- Check associativity for semigroups
 checkAssociativity :: (Semigroup a, Show a, Eq a) => a -> a -> a -> IO ()
