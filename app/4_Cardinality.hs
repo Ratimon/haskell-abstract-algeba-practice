@@ -2,7 +2,6 @@
 differentCardinalities :: Eq a => [a] -> [a] -> Bool
 differentCardinalities setA setB = length setA /= length setB
 
--- Check if two finite sets are equal
 areSetsEqual :: Eq a => [a] -> [a] -> Bool
 areSetsEqual setA setB = not (differentCardinalities setA setB) && all (`elem` setB) setA
 

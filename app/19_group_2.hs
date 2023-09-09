@@ -1,7 +1,6 @@
 import Data.Semigroup
 import Data.Monoid
 
--- Define a type for polynomials
 newtype Polynomial = Polynomial [Int] deriving (Eq, Show)
 
 -- Define a custom Semigroup instance for Polynomial (addition of polynomials)

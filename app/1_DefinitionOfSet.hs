@@ -10,7 +10,6 @@ createRational p q
 rationalNumbers :: [RationalNumber]
 rationalNumbers = [ createRational p q | p <- [-1000..1000], q <- [-1000..1000], q /= 0 ]
 
--- Function to convert a RationalNumber to a String
 rationalToString :: RationalNumber -> String
 rationalToString (RationalNumber p q) = show p ++ " / " ++ show q
 

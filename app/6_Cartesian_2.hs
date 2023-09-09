@@ -1,11 +1,9 @@
--- Define sets
 setA :: [Int]
 setA = [1, 2, 3, 4]
 
 setB :: [Int]
 setB = [3, 6, 9, 12]
 
--- Calculate Cartesian product A × B
 cartesianProduct :: [(Int, Int)]
 cartesianProduct = [(x, y) | x <- setA, y <- setB]
 
@@ -17,7 +15,6 @@ printProduct (a, b) = putStrLn $ "   " ++ show a ++ "   |   " ++ show b ++ "   |
 computeArithmetic :: [(Int, Int)] -> [Int]
 computeArithmetic pairs = [x * y | (x, y) <- pairs]
 
--- Display results
 main :: IO ()
 main = do
     putStrLn "Cartesian Product A × B:"

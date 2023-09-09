@@ -1,11 +1,9 @@
--- Define sets
 setA :: [Int]
 setA = [1, 2, 3, 4, 5, 6]
 
 setB :: [String]
 setB = ["even", "odd"]
 
--- Generate the cartesian product of sets A and B
 cartesianProduct :: [(Int, String)]
 cartesianProduct = [(x, y) | x <- setA, y <- setB]
 

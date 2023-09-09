@@ -5,7 +5,6 @@ setA = [0, 1, 2]
 multMod3 :: Int -> Int -> Int
 multMod3 a b = (a * b) `mod` 3
 
--- Generate the cartesian product of the set with itself
 cartesianProduct :: [(Int, Int)]
 cartesianProduct = [(x, y) | x <- setA, y <- setA]
 

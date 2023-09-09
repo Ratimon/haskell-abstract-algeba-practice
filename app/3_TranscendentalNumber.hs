@@ -1,6 +1,5 @@
 import Data.Complex
 
--- Check if a given number is transcendental
 isTranscendental :: RealFloat a => Complex a -> Bool
 isTranscendental z = not (isAlgebraic z)
 
@@ -27,7 +26,6 @@ poly2 z = realPart z ^ 3 + imagPart z
 poly3 :: RealFloat a => Complex a -> a
 poly3 z = realPart z - 5 * imagPart z ^ 2
 
--- Sample usage
 main :: IO ()
 main = do
     let complexNumber = 2 :+ 3  -- Create a complex number 2 + 3i

@@ -1,9 +1,7 @@
 import Data.Monoid
 
--- Define a newtype wrapper for strings
 newtype ConcatString = ConcatString String deriving (Eq, Show)
 
--- Define a custom Semigroup instance for ConcatString
 instance Semigroup ConcatString where
     (ConcatString s1) <> (ConcatString s2) = ConcatString (s1 ++ s2)
 

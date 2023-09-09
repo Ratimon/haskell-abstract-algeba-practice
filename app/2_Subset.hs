@@ -1,15 +1,6 @@
 import Data.Complex
 import qualified Data.Set as S
 
--- Define the data types for different number systems
--- data RealNumber = RealNumber Double
--- data RationalNumber = RationalNumber Rational 
--- data ComplexNumber = ComplexNumber (Complex Double)
--- -- Define the Show instance for ComplexNumber
--- instance Show ComplexNumber where
---     show (ComplexNumber (x :+ y)) = show x ++ " + " ++ show y ++ "i"
-
--- Check subset relationships
 isSubset :: Ord a => [a] -> [a] -> Bool
 isSubset xs ys = all (`S.member` yset) xs where
   yset = S.fromList ys

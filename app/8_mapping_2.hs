@@ -1,11 +1,9 @@
--- Define sets
 setIntegers :: [Int]
 setIntegers = [0, 1, 2, 3, 4, 5, 6, 7, 8]
 
 setPolygons :: [String]
 setPolygons = ["triangle", "square", "pentagon", "hexagon", "heptagon", "octagon"]
 
--- Generate the cartesian product of sets
 cartesianProduct :: [(Int, String)]
 cartesianProduct = [(x, y) | x <- setIntegers, y <- setPolygons]
 

@@ -1,4 +1,3 @@
--- Define the set A
 setA :: [Int]
 setA = [0, 1, 2, 3, 4]
 
