@@ -504,10 +504,26 @@ To illustrate the statement “the second binary operator distributes over the f
 `c ☆ (a □ b) = (c ☆ a) □ (c ☆ b)`
 
 
-Note how the first binary operator □ appears in the parenthesis on the left hand, then we apply the second binary operator ☆. That is what we mean by saying “the second binary operator distrbutes over the first.” We do not require `c □ (a ☆ b)` to distribute.
+Note how the first binary operator `□` appears in the parenthesis on the left hand, then we apply the second binary operator `☆`. That is what we mean by saying “the second binary operator distrbutes over the first.” We do not require `c □ (a ☆ b)` to distribute.
 
 The following is not necessarily true of a ring:
 
 `(a □ b) ☆ c = c ☆ (a □ b)`
 
 20. By a ring’s definition, why is the above statement not always true? What assumption is it making about the ring?
+
+> **Answer**
+
+The statement `(a □ b) ☆ c = c ☆ (a □ b)` is not always true in a ring because it assumes that the first binary operator `□` is commutative. In other words, it assumes that for any elements a and b in the set, the result of applying the operation `□` to a and b is the same as applying it to b and a, i.e., `a □ b = b □ a` .
+
+In a general ring, the first binary operator `□` does not have to be commutative. Rings are defined to be sets with two binary operations, one for addition and one for multiplication (often denoted as + and *). While the multiplication operation (*) must satisfy associativity ((a * b) * c = a * (b * c)), it is not required to be commutative.
+
+If the multiplication operation (*) in a ring is commutative (a * b = b * a for all a and b in the set), then the ring is referred to as a commutative ring. In this case, the statement `(a □ b) ☆ c = c ☆ (a □ b)` would indeed hold true because both the addition and multiplication operations are commutative.
+
+However, the definition of a ring allows for non-commutative multiplication, and in such cases, the statement `(a □ b) ☆ c = c ☆ (a □ b)` may not be true because the order of multiplication matters, and distributivity is defined as shown in your original statement:
+
+`(a □ b) ☆ c = (a ☆ c) □ (b ☆ c)`
+
+`c ☆ (a □ b) = (c ☆ a) □ (c ☆ b)`
+
+So, the assumption about the ring is that the multiplication operation (*) is not necessarily commutative, and distributivity is defined accordingly.
