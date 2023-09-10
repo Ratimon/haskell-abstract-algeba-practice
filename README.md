@@ -535,3 +535,30 @@ So, the assumption about the ring is that the multiplication operation (*) is no
 21. Use the definition of a ring to show that the trivial ring is in fact a ring
 
 > **Answer**
+
+To show that the trivial ring, which consists only of the element {0}, is indeed a ring, we need to demonstrate that it satisfies the defining properties of a ring. 
+
+A ring is defined as a set equipped with two binary operations, usually denoted as addition (+) and multiplication (·), such that the following properties hold:
+
+1. **Additive Abelian Group:** The set under addition forms an abelian (commutative) group. This means that addition is associative, has an identity element (0), and every element has an additive inverse.
+
+2. **Multiplication Closure:** The set is closed under multiplication. For any elements a and b in the set, the product a · b is also in the set.
+
+3. **Distributive Property:** Multiplication distributes over addition. For any elements a, b, and c in the set, the following property holds:
+   a · (b + c) = (a · b) + (a · c) and (b + c) · a = (b · a) + (c · a)
+
+Now, let's prove that the trivial ring satisfies these properties:
+
+1. **Additive Abelian Group:**
+   - **Associativity:** Since there is only one element, associativity of addition is trivial.
+   - **Identity Element:** The identity element is 0, which is the only element in the set.
+   - **Additive Inverse:** Since there is only one element, its additive inverse is itself (0).
+
+2. **Multiplication Closure:** Since there is only one element (0) in the set, any product of elements in the set will also be 0, which is in the set.
+
+3. **Distributive Property:**
+   - For any elements a, b, and c in the set, we have:
+     a · (b + c) = 0 · (0 + 0) = 0 = (0 · 0) + (0 · 0)
+     (b + c) · a = (0 + 0) · 0 = 0 = (0 · 0) + (0 · 0)
+
+Therefore, we've shown that the trivial ring satisfies all the properties of a ring. It's a ring consisting of only the element {0}, and its operations of addition and multiplication are defined in such a way that all ring properties are met.
