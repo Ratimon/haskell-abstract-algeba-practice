@@ -562,3 +562,9 @@ Now, let's prove that the trivial ring satisfies these properties:
      (b + c) · a = (0 + 0) · 0 = 0 = (0 · 0) + (0 · 0)
 
 Therefore, we've shown that the trivial ring satisfies all the properties of a ring. It's a ring consisting of only the element {0}, and its operations of addition and multiplication are defined in such a way that all ring properties are met.
+
+22. Square matrices of real numbers under addition and multiplication is a ring. Demonstrate this to be the case. Think carefully about what the idenity elements are and whether an inverse always exists.
+
+Note that matrix multiplication is not commutative in general. We only need to show it is a ring, not an abelian ring.
+
+> **Answer**
