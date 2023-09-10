@@ -510,6 +510,9 @@ The following is not necessarily true of a ring:
 
 `(a □ b) ☆ c = c ☆ (a □ b)`
 
+
+### Rings
+
 20. By a ring’s definition, why is the above statement not always true? What assumption is it making about the ring?
 
 > **Answer**
@@ -527,3 +530,8 @@ However, the definition of a ring allows for non-commutative multiplication, and
 `c ☆ (a □ b) = (c ☆ a) □ (c ☆ b)`
 
 So, the assumption about the ring is that the multiplication operation (*) is not necessarily commutative, and distributivity is defined accordingly.
+
+
+21. Use the definition of a ring to show that the trivial ring is in fact a ring
+
+> **Answer**
