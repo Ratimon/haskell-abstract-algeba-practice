@@ -13,6 +13,7 @@ cabal run abstract-algeba
 
 ## Problems
 
+
 ### Sets
 
 1. Assume you have a proper definition for integers. Create a well-defined set of rational numbers.
@@ -259,6 +260,9 @@ Therefore, we have demonstrated that when the binary operator is commutative, th
 
 13.  Define our set A to be the numbers 0,1,2,3,4 and our binary operator to be subtraction modulo 5. Define all the ordered pairs of A ⨉ A in a table, then map that set of ordered pairs to A.
 
+
+### Semigroups
+
 > **Answer**
 
 ```bash
@@ -312,6 +316,9 @@ Since the binary operation is associative, this example constitutes a semigroup.
 ```bash
 cabal run semi-group_2
 ```
+
+
+### Monoids
 
 16. Let our binary operator be the function min(a,b) over integers. Is this a magma, semigroup, or monoid? What if we restrict the domain to be positive integers (zero or greater)? What about the binary operator max(a,b) over those two domains?
 
@@ -434,6 +441,8 @@ In summary:
 None of these operators form semigroups or monoids since they do not have identity elements.
 
 
+### Groups
+
 18. Why can’t strings under concatenation be a group?
 
 > **Answer**
@@ -471,3 +480,34 @@ Therefore, polynomials under addition satisfy the closure property, associativit
 ```bash
 cabal run group-ex_2
 ```
+
+### Rings
+
+A Ring is a set with two binary operators such that
+
+under the first binary operator, the set is a abelian group
+
+under the second binary operator, the set is a monoid
+
+the second binary operator distributes over the first
+
+Remember, a monoid does not have an inverse, but a group does.
+
+We do not require the monoid to be commutative. If it is, we refer to this ring as an abelian ring.
+
+
+To illustrate the statement “the second binary operator distributes over the first”, let our binary operators be □ and ☆, where □ is the first binary operator and ☆ is the second binary operator. The following must be true for the field:
+
+
+`(a □ b) ☆ c = (a ☆ c) □ (b ☆ c)`
+
+`c ☆ (a □ b) = (c ☆ a) □ (c ☆ b)`
+
+
+Note how the first binary operator □ appears in the parenthesis on the left hand, then we apply the second binary operator ☆. That is what we mean by saying “the second binary operator distrbutes over the first.” We do not require `c □ (a ☆ b)` to distribute.
+
+The following is not necessarily true of a ring:
+
+`(a □ b) ☆ c = c ☆ (a □ b)`
+
+20. By a ring’s definition, why is the above statement not always true? What assumption is it making about the ring?
