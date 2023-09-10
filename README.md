@@ -563,8 +563,24 @@ Now, let's prove that the trivial ring satisfies these properties:
 
 Therefore, we've shown that the trivial ring satisfies all the properties of a ring. It's a ring consisting of only the element {0}, and its operations of addition and multiplication are defined in such a way that all ring properties are met.
 
+
 22. Square matrices of real numbers under addition and multiplication is a ring. Demonstrate this to be the case. Think carefully about what the idenity elements are and whether an inverse always exists.
 
 Note that matrix multiplication is not commutative in general. We only need to show it is a ring, not an abelian ring.
 
 > **Answer**
+
+1. **Additive Abelian Group:**
+    - **Associativity:** Matrix addition is associative. For any square matrices A, B, and C of the same order, (A + B) + C = A + (B + C).
+    - **Identity Element:** The identity element under addition is the zero matrix (a matrix where all elements are 0). For any square matrix A, A + 0 = 0 + A = A.
+    - **Additive Inverse:** For every square matrix A, there exists an additive inverse (-A) such that A + (-A) = (-A) + A = 0. In this case, the additive inverse of a matrix A is simply the matrix with all elements negated.
+
+2. **Multiplication Closure:**
+    - For any square matrices A and B, the product AB is also a square matrix.
+
+3. **Distributive Property:**
+    - Multiplication distributes over addition. For any square matrices A, B, and C, the following properties hold:
+        - A · (B + C) = (A · B) + (A · C)
+        - (B + C) · A = (B · A) + (C · A)
+
+So, square matrices of real numbers under addition and multiplication indeed satisfy these properties and are considered a ring.
