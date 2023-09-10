@@ -584,3 +584,12 @@ Note that matrix multiplication is not commutative in general. We only need to s
         - (B + C) · A = (B · A) + (C · A)
 
 So, square matrices of real numbers under addition and multiplication indeed satisfy these properties and are considered a ring.
+
+### Fields
+
+23. It isn’t possible to construct a trivial field using one element.
+
+Why is that the case?
+
+Hint: how many identity elements are needed? Hint: remember, the definition of a field is that the zero element is removed. An empty set cannot be a group.
+
