@@ -118,3 +118,9 @@ executable group-ex_2
     build-depends:    base ^>=4.16.4.0, groups ^>=0.5.3
     hs-source-dirs:   app
     default-language: Haskell2010
+
+executable extra_1
+    main-is:          24_extra_1.hs
+    build-depends:    base ^>=4.16.4.0, groups ^>=0.5.3
+    hs-source-dirs:   app
+    default-language: Haskell2010
