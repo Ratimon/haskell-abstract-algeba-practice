@@ -644,3 +644,7 @@ Therefore, the binary operation '*' on the set {monyet, kodok, burung, ular} for
 ```bash
 cabal run extra_1
 ```
+
+25. Find a binary operator that is closed but not associative for real numbers
+
+> **Answer**
