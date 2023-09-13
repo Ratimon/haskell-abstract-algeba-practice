@@ -662,3 +662,11 @@ However, this operator is still closed, meaning that if you take any two real nu
 26. Let our set be real numbers. Show a binary operator that is not closed
 
 > **Answer**
+
+Vonsider the binary operator of **division**, denoted as "/," on the set of real numbers. While division is a fundamental operation, it's important to note that it is not always closed on the set of real numbers, especially when considering division by zero.
+
+In mathematical terms:
+
+For any real numbers a and b, a / b is not defined if b = 0 because division by zero is undefined in mathematics.
+
+This demonstrates that the binary operator of division is not closed on the set of real numbers when we consider the possibility of division by zero.
