@@ -674,6 +674,33 @@ For any real numbers a and b, a / b is not defined if b = 0 because division by 
 
 This demonstrates that the binary operator of division is not closed on the set of real numbers when we consider the possibility of division by zero.
 
+
 27. What algebraic structure is all odd integers under multiplication? All even integers under addition?
 
 > **Answer**
+
+The set of all odd integers under multiplication forms a group. 
+
+Here's why:
+
+1. Closure: When you multiply two odd integers, the result is also an odd integer. So, the set is closed under multiplication.
+
+2. Associativity: Multiplication of integers is associative, so this property holds for the set of odd integers as well.
+
+3. Identity Element: The identity element for multiplication is 1. In the set of odd integers, 1 is also an odd integer, so it serves as the identity element.
+
+4. Inverse Element: For any odd integer 'a', its multiplicative inverse is 1/a, which is also an odd integer (assuming a ≠ 0). So, every element in the set has an inverse within the set.
+
+On the other hand, the set of all even integers under addition forms an abelian (commutative) group. 
+
+Here's why:
+
+1. Closure: When you add two even integers, the result is also an even integer. So, the set is closed under addition.
+
+2. Associativity: Addition of integers is associative, so this property holds for the set of even integers as well.
+
+3. Identity Element: The identity element for addition is 0. In the set of even integers, 0 is also an even integer, so it serves as the identity element.
+
+4. Inverse Element: For any even integer 'a', its additive inverse is -a, which is also an even integer. So, every element in the set has an inverse within the set.
+
+5. Commutativity: Addition of integers is commutative, so this property holds for the set of even integers as well, making it an abelian group.
