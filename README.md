@@ -585,6 +585,7 @@ Note that matrix multiplication is not commutative in general. We only need to s
 
 So, square matrices of real numbers under addition and multiplication indeed satisfy these properties and are considered a ring.
 
+
 ### Fields
 
 23. It isn’t possible to construct a trivial field using one element.
@@ -645,6 +646,7 @@ Therefore, the binary operation '*' on the set {monyet, kodok, burung, ular} for
 cabal run extra_1
 ```
 
+
 25. Find a binary operator that is closed but not associative for real numbers
 
 > **Answer**
@@ -659,6 +661,7 @@ As you can see from the example, the results of these operations are not the sam
 
 However, this operator is still closed, meaning that if you take any two real numbers a and b, a^b will be a real number as well.
 
+
 26. Let our set be real numbers. Show a binary operator that is not closed
 
 > **Answer**
@@ -670,3 +673,7 @@ In mathematical terms:
 For any real numbers a and b, a / b is not defined if b = 0 because division by zero is undefined in mathematics.
 
 This demonstrates that the binary operator of division is not closed on the set of real numbers when we consider the possibility of division by zero.
+
+27. What algebraic structure is all odd integers under multiplication? All even integers under addition?
+
+> **Answer**
