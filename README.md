@@ -648,3 +648,13 @@ cabal run extra_1
 25. Find a binary operator that is closed but not associative for real numbers
 
 > **Answer**
+
+A classic example of a binary operator that is closed but not associative for real numbers is the "power" operator, denoted as "^". This operator takes two real numbers, a and b, and calculates a^b.
+
+For example:
+
+(2^3)^4 = 8^4 = 4096
+2^(3^4) = 2^81 ≈ 2.41785 × 10^24
+As you can see from the example, the results of these operations are not the same, demonstrating that the operator is not associative.
+
+However, this operator is still closed, meaning that if you take any two real numbers a and b, a^b will be a real number as well.
