@@ -649,7 +649,7 @@ cabal run extra_1
 
 > **Answer**
 
-A classic example of a binary operator that is closed but not associative for real numbers is the "power" operator, denoted as "^". This operator takes two real numbers, a and b, and calculates a^b.
+Consider a binary operator of **power** operator, denoted as "^". This operator takes two real numbers, a and b, and calculates a^b.
 
 For example:
 
@@ -658,3 +658,7 @@ For example:
 As you can see from the example, the results of these operations are not the same, demonstrating that the operator is not associative.
 
 However, this operator is still closed, meaning that if you take any two real numbers a and b, a^b will be a real number as well.
+
+26. Let our set be real numbers. Show a binary operator that is not closed
+
+> **Answer**
