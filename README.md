@@ -616,3 +616,31 @@ In summary, a field requires two distinct identity elements (0 and 1) and specif
 ### Extra
 
 24. Suppose you have a set `{monyet, kodok, burung, ular}`. Define a binary operator that turns it into a group using set-theoretic definitions.
+
+> **Answer**
+
+Let's define a binary operation '*' on the set {monyet, kodok, burung, ular} as follows:
+
+monyet * kodok = burung
+kodok * monyet = burung
+burung * monyet = kodok
+ular * any_element = ular (where 'any_element' can be monyet, kodok, burung, or ular)
+Now, let's check if this binary operation forms a group:
+
+Closure: This operation satisfies closure because the result of any two elements in the set is still an element in the set.
+
+Associativity: The operation is defined such that it is associative. For example, (monyet * kodok) * burung = burung * burung = ular, and monyet * (kodok * burung) = monyet * burung = burung * burung = ular.
+
+Identity Element: In this case, the identity element is "ular" because ular * monyet = ular * kodok = ular * burung = ular * ular = ular.
+
+Inverse Element: For each element "a" in the set, we can find its inverse as follows:
+
+monyet^(-1) = kodok because monyet * kodok = burung (identity element)
+kodok^(-1) = monyet because kodok * monyet = burung (identity element)
+burung^(-1) = burung because burung * burung = ular (identity element)
+ular^(-1) = ular because ular * ular = ular (identity element)
+Therefore, the binary operation '*' on the set {monyet, kodok, burung, ular} forms a group, as it satisfies all four group axioms.
+
+```bash
+cabal run extra_1
+```
