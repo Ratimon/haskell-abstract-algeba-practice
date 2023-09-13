@@ -1,26 +1,22 @@
 data Animal = Monyet | Kodok | Burung | Ular deriving (Eq, Show)
 
--- Define a custom binary operator '⋆' (you can choose any symbol that doesn't clash with existing operators)
 (⋆) :: Animal -> Animal -> Animal
 Monyet ⋆ Kodok = Burung
 Kodok ⋆ Monyet = Burung
 Burung ⋆ Monyet = Kodok
 Ular ⋆ _ = Ular
 _ ⋆ Ular = Ular
-_ ⋆ _ = Burung  -- Default result for other cases
+_ ⋆ _ = Burung
 
--- Define the identity element
 identity :: Animal
 identity = Ular
 
--- Define a function to find the inverse element
 inverse :: Animal -> Animal
 inverse Monyet = Kodok
 inverse Kodok = Monyet
 inverse Burung = Burung
 inverse Ular = Ular
 
--- Check if the binary operator forms a group
 isGroup :: Bool
 isGroup =
   all (\a -> a ⋆ identity == identity ⋆ a && a ⋆ inverse a == inverse a ⋆ a) [Monyet, Kodok, Burung, Ular]
@@ -36,8 +32,15 @@ main = do
   putStrLn $ "Burung ⋆ Monyet = " ++ show (Burung ⋆ Monyet)
   putStrLn $ "Ular ⋆ Monyet = " ++ show (Ular ⋆ Monyet)
 
+  putStrLn $ "Associativity: " 
+  putStrLn $ "(Monyet ⋆ Kodok) ⋆ Burung = " ++ show ((Monyet ⋆ Kodok) ⋆ Burung)
+  putStrLn $ "Monyet ⋆ (Kodok ⋆ Burung) = " ++ show (Monyet ⋆ (Kodok ⋆ Burung))
+
   putStrLn "\nIdentity Element:"
   putStrLn $ "identity = " ++ show identity
+  putStrLn $ "(Ular ⋆ Monyet) = " ++ show (Ular ⋆ Monyet)
+  putStrLn $ "(Kodok ⋆ Ular) = " ++ show (Kodok ⋆ Ular)
+  putStrLn $ "(Ular ⋆ Ular) = " ++ show (Ular ⋆ Ular)
 
   putStrLn "\nInverse Elements:"
   putStrLn $ "inverse Monyet = " ++ show (inverse Monyet)
