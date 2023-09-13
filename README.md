@@ -611,3 +611,8 @@ For addition, the identity element is typically denoted as 0, and for multiplica
 If we were to construct a trivial field using only one element, we would face a problem because we need two distinct identity elements: one for addition and one for multiplication. Since there is only one element in the set, it cannot simultaneously serve as both the identity element for addition (0) and the identity element for multiplication (1). Therefore, it is impossible to construct a trivial field with just one element.
 
 In summary, a field requires two distinct identity elements (0 and 1) and specific properties for both addition and multiplication. A single-element set cannot fulfill these requirements, making it impossible to create a trivial field with only one element.
+
+
+### Extra
+
+24. Suppose you have a set `{monyet, kodok, burung, ular}`. Define a binary operator that turns it into a group using set-theoretic definitions.
