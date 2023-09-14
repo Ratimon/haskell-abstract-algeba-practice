@@ -704,3 +704,8 @@ Here's why:
 4. Inverse Element: For any even integer 'a', its additive inverse is -a, which is also an even integer. So, every element in the set has an inverse within the set.
 
 5. Commutativity: Addition of integers is commutative, so this property holds for the set of even integers as well, making it an abelian group.
+
+
+28. Let our group be 3 x 2 matrices of integers under addition. What is the identity and inverse? Can this be a cyclic group, why or why not? (Pay very close attention to the definition of cyclic group)
+
+> **Answer**
