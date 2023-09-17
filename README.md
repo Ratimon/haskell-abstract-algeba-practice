@@ -1,23 +1,3 @@
-<style TYPE="text/css">
-code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}
-</style>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [['$','$'], ['\\(','\\)']],
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'] // removed 'code' entry
-    }
-});
-MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-});
-</script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML-full"></script>
-# haskell-abstract-algeba-practice
-
 ## Installation
 
 ```bash
@@ -752,3 +732,15 @@ In a cyclic group, you should be able to start with a single element (the genera
 However, in the group of 3x2 matrices of integers, there is no single matrix that, when added to itself repeatedly, can generate all possible matrices in this group. The set of 3x2 matrices is more complex, and no single matrix can serve as a generator for the entire group.
 
 Therefore, this group is not a cyclic group.
+
+
+29. Demonstrate that
+
+`n (mod p), n = ...-2,-1,0,1,2,...`
+
+is a group under addition. Remember, you need to show that:
+
+- the binary operator is closed
+- the binary operator is associative
+- an indentity exsits
+- every element has an inverse
