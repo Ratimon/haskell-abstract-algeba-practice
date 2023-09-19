@@ -744,3 +744,32 @@ is a group under addition. Remember, you need to show that:
 - the binary operator is associative
 - an indentity exsits
 - every element has an inverse
+
+
+> **Answer**
+
+To demonstrate that the set of integers `n` under modular addition `n (mod) p, n = ...-2,-1,0,1,2,...`, forms a group, we need to verify the four group properties:
+
+1. **Closure:** The binary operator is closed if, for any two integers `a` and `b`, the result of `a (mod p)` + `b (mod p)` is also an integer within the set `-2,-1,0,1,2,...`.
+
+2. **Associativity:** The binary operator is associative if (`a (mod p)` + `b (mod p)`) + `c (mod p)` = `a (mod p)` + (`b (mod p)` + `c (mod p)`) for any integers `a, b, c`.
+
+3. **Identity Element:** There exists an identity element, denoted as `e`, such that `a (mod p)` + `e (mod p)` = `a` for any integer `a`.
+
+4. **Inverse Elements:** For every integer `a`, there exists an inverse element, denoted as `-a`, such that `a (mod p)` + `(-a) (mod p)` = `e`.
+
+Let's demonstrate these properties one by one:
+
+**1. Closure:**
+- This is true because adding two integers and then taking the modulus \(p\) will result in another integer.
+
+**2. Associativity:**
+- Associativity holds in modular addition because the order of addition does not affect the result when taking the modulus.
+
+**3. Identity Element:**
+- The identity element is `a (mod p)` + `0 (mod p)` = `a` for any integer `a`.
+
+**4. Inverse Elements:**
+- For every integer `a`, the additive inverse (negative) is `-a` because `a (mod p)` + `(-a) (mod p) = 0`, which is the identity element.
+
+Therefore, the set of integers `n` under modular addition `(mod p)` forms a group with the binary operator `+` when `n = ...-2,-1,0,1,2,...`.
