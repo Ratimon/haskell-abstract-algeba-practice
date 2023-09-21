@@ -773,3 +773,11 @@ Let's demonstrate these properties one by one:
 - For every integer `a`, the additive inverse (negative) is `-a` because `a (mod p)` + `(-a) (mod p) = 0`, which is the identity element.
 
 Therefore, the set of integers `n` under modular addition `(mod p)` forms a group with the binary operator `+` when `n = ...-2,-1,0,1,2,...`.
+
+30. Demonstrate that
+
+`g^{n} (mod p), n =...-2, -1, 0, 1, 2...`
+
+Where g and p are relatively prime is a group under multiplication. That is, given elements g^a, g^b, (g^a)*(g^b) is in the group and the binary operator follows the group laws.
+
+> **Answer**
