@@ -781,3 +781,23 @@ Therefore, the set of integers `n` under modular addition `(mod p)` forms a grou
 Where g and p are relatively prime is a group under multiplication. That is, given elements g^a, g^b, (g^a)*(g^b) is in the group and the binary operator follows the group laws.
 
 > **Answer**
+
+To demonstrate that , we need to show that it satisfies the group properties:
+
+**1. Closure:**
+- To show closure, we need to demonstrate that `g^a (mod p) . g^b (mod p)`  is still an element within the set `n = ...-2,-1,0,1,2,...`.
+- This is true because multiplying two numbers and then taking the modulus `(mod p)` will result in another number within the set.
+
+**2. Associativity:**
+- Associativity holds in multiplication because the order of multiplication does not affect the result when taking the modulus.
+
+
+**3. Identity Element:**
+- The identity element is `1` because `g^a (mod p) . 1 (mod p)` = `g^a` for any integer `a`.
+
+**4. Inverse Elements:**
+- For every integer `a`, the multiplicative inverse (reciprocal) is `(g^a)^(-1)` because `g^a (mod p) . (g^a)^(-1) (mod p) = 1`, which is the identity element.
+
+To ensure that the group properties hold, it's important that `g` and `p` are relatively prime (i.e., they have no common factors other than 1). This ensures that the multiplicative inverses exist.
+
+Therefore, the set of integers `n` under modular exponentiation `(mod p)`, where `n =...-2, -1, 0, 1, 2...`, forms a group under multiplication when `g` and `p` are relatively prime.
