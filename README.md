@@ -801,3 +801,8 @@ To demonstrate that , we need to show that it satisfies the group properties:
 To ensure that the group properties hold, it's important that `g` and `p` are relatively prime (i.e., they have no common factors other than 1). This ensures that the multiplicative inverses exist.
 
 Therefore, the set of integers `n` under modular exponentiation `(mod p)`, where `n =...-2, -1, 0, 1, 2...`, forms a group under multiplication when `g` and `p` are relatively prime.
+
+
+31. Both integers and polynomials with integer coefficients are rings. It is possible to define a homomorphism from integers to polynomials with integer coefficients, but not the other way around. Describe what this homomorphism is and why it is the case we can’t do it in the other direction.
+
+> **Answer**
